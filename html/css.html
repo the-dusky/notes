@@ -1,0 +1,54 @@
+<h1>CSS Notes</h1>
+<h2>Position</h2>
+<p>Example: <a href="https://jsbin.com/fasurihesa/edit?html,css,output">JSBin</a></p>
+<p>Absolute Positioning - position: absolute;</p>
+<ul>
+<li>
+<p>Position is relative to a reference element</p>
+</li>
+<li>
+<p>The reference element is the nearest positioned ancestor.</p>
+</li>
+<li>
+<p>If there is no positioned ancestor it uses the viewport as the reference element. (In this case it would be identical to Position: Fixed;).</p>
+</li>
+<li>
+<p>A &quot;Positioned&quot; element is one whose position is anything except static. (This is important, because absolute will ignore the parent element unless it is &quot;positioned&quot; which is sometimes hard to figure out)</p>
+</li>
+</ul>
+<h2>BEM Methodology</h2>
+<p><a href="http://getbem.com/introduction">Reference Link</a></p>
+<p>Core Concepts:</p>
+<ul>
+<li>Block, Element, Modifier</li>
+</ul>
+<h2>Units</h2>
+<p><a href="https://codepen.io/team/MedTouch/pen/YqBJzv">Reference Link</a></p>
+<ul>
+<li>px
+<ul>
+<li>Pixels</li>
+<li>Related to the Viewport by size in pixels.</li>
+<li>If Viewport is 800x800 then 8px is 1%</li>
+</ul>
+</li>
+<li>em
+<ul>
+<li>M width (in oldschool typography)</li>
+<li>Related to the font-size of the nearest parent element</li>
+</ul>
+</li>
+<li>rem
+<ul>
+<li>Root EM</li>
+<li>Related to the root font-size. (font-size determined in the html element. 16px default)</li>
+<li>Best practice is make font-size 62.5% (10px) in the html element style. Then 1rem = 10px. 2rem = 20px 1.4rem = 14px</li>
+</ul>
+</li>
+<li>vw &amp; vh
+<ul>
+<li>Viewport Width (vw) and Viewport Height (vh)</li>
+<li>Related to viewport size where 100vw or 100vh are 100% of the width and height respectively.</li>
+</ul>
+</li>
+</ul>

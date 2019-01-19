@@ -1,0 +1,22 @@
+<h1>SASS Notes</h1>
+<h2>&amp; - Ampersand</h2>
+<ul>
+<li>The ampersand copies the name of the parent selector.</li>
+</ul>
+<p>Example:</p>
+<p>This:</p>
+<pre><code class="language-css">.parent {
+    position: relative;
+    &amp;--child {
+        position: absolute;
+    }
+}
+</code></pre>
+<p>is identical to:</p>
+<pre><code class="language-css">.parent {
+    position: relative;
+}
+.parent--child {
+    position: absolute;
+}
+</code></pre>
